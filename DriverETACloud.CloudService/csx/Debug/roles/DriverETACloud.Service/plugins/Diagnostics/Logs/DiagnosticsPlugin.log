@@ -1,0 +1,78 @@
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:54 PM] Starting DiagnosticPlugin.exe DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5
+DiagnosticsPlugin.exe Error: 0 : [12/15/2016 6:18:55 PM] Failed to save IIS Directory state
+DiagnosticsPlugin.exe Error: 0 : [12/15/2016 6:18:55 PM] System.Runtime.InteropServices.COMException (0x80040154): Retrieving the COM class factory for component with CLSID {2B72133B-3F5B-4602-8952-803546CE3344} failed due to the following error: 80040154 Class not registered (Exception from HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+   at System.Runtime.Remoting.RemotingServices.AllocateUninitializedObject(RuntimeType objectType)
+   at System.Runtime.Remoting.Activation.ActivationServices.CreateInstance(RuntimeType serverType)
+   at System.Runtime.Remoting.Activation.ActivationServices.IsCurrentContextOK(RuntimeType serverType, Object[] props, Boolean bNewObj)
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance[T]()
+   at Microsoft.Web.Administration.ConfigurationManager.CreateAdminManager[TClass,TInterface](WebConfigurationMap webConfigMap, Boolean isAdminConfig)
+   at Microsoft.Web.Administration.ConfigurationManager.CreateConfiguration(WebConfigurationMap configMap, String configPathToEdit, Boolean isAdminConfig)
+   at Microsoft.Web.Administration.ConfigurationManager.GetConfiguration(String rawConfigurationPath, String cacheKey, Boolean isAdminConfig)
+   at Microsoft.Web.Administration.ConfigurationManager.GetApplicationHostConfiguration()
+   at Microsoft.Web.Administration.ServerManager.get_SitesSection()
+   at Microsoft.Web.Administration.ServerManager.get_Sites()
+   at Microsoft.Azure.Plugins.Plugin.DiagnosticsPluginManager.SaveIISDirectoryState()
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:55 PM] Starting DiagnosticsPlugin
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:55 PM] Emulator config file set to C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.CloudService\csx\Debug\roles\DriverETACloud.Service\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:55 PM] DiagnosticsStoreRootPath set to: C:\Users\u23298\AppData\Local\dftmp\Resources\ba2b5a2a-7e3f-48ef-b2b8-22d8308b8428
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:55 PM] Loading config file: C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.CloudService\csx\Debug\roles\DriverETACloud.Service\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:55 PM] Config file to read: C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.CloudService\csx\Debug\roles\DriverETACloud.Service\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:55 PM] Checking VM Type
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:55 PM] Emulator config file set to C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.CloudService\csx\Debug\roles\DriverETACloud.Service\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:55 PM] Extension set to Emulator Mode
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:55 PM] Reading XML configuration file
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:55 PM] Bypassing private config decryption
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:55 PM] WadCfg is provided in initial configuration. Using that to initialize Diagnostics.
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:55 PM] <PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
+  <WadCfg>
+    <DiagnosticMonitorConfiguration overallQuotaInMB="4096">
+      <DiagnosticInfrastructureLogs scheduledTransferLogLevelFilter="Error" />
+      <Logs scheduledTransferPeriod="PT1M" scheduledTransferLogLevelFilter="Error" />
+      <Directories scheduledTransferPeriod="PT1M">
+        <IISLogs containerName="wad-iis-logfiles" />
+        <FailedRequestLogs containerName="wad-failedrequestlogs" />
+      </Directories>
+      <WindowsEventLog scheduledTransferPeriod="PT1M">
+        <DataSource name="Application!*[System[(Level=1 or Level=2 or Level=3)]]" />
+        <DataSource name="Windows Azure!*[System[(Level=1 or Level=2 or Level=3 or Level=4)]]" />
+      </WindowsEventLog>
+      <CrashDumps containerName="wad-crashdumps" dumpType="Mini">
+        <CrashDumpConfiguration processName="WaIISHost.exe" />
+        <CrashDumpConfiguration processName="WaWorkerHost.exe" />
+        <CrashDumpConfiguration processName="w3wp.exe" />
+      </CrashDumps>
+      <PerformanceCounters scheduledTransferPeriod="PT1M">
+        <PerformanceCounterConfiguration counterSpecifier="\Memory\Available MBytes" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Web Service(_Total)\ISAPI Extension Requests/sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Web Service(_Total)\Bytes Total/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Requests/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Errors Total/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Requests Queued" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Requests Rejected" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Processor(_Total)\% Processor Time" sampleRate="PT3M" />
+      </PerformanceCounters>
+    </DiagnosticMonitorConfiguration>
+  </WadCfg>
+  <StorageAccount>devstoreaccount1</StorageAccount>
+</PublicConfig>
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:55 PM] Private setting is loaded
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:55 PM] Is config json/xml loaded
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:55 PM] Checking if configuration needs to be fetched from the storage account and doing so if needed.
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:57 PM] Successfully created checkpoint file C:\Users\u23298\AppData\Local\dftmp\Resources\ba2b5a2a-7e3f-48ef-b2b8-22d8308b8428\WAD0105\Configuration\Checkpoint.txt
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:57 PM] Will use local resource directory C:\Users\u23298\AppData\Local\dftmp\Resources\ba2b5a2a-7e3f-48ef-b2b8-22d8308b8428\WAD0105
+DiagnosticsPlugin.exe Error: 0 : [12/15/2016 6:18:57 PM] System.BadImageFormatException: Could not load file or assembly 'Microsoft.Cis.Monitoring.SecUtil, Version=33.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+File name: 'Microsoft.Cis.Monitoring.SecUtil, Version=33.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'
+   at Microsoft.Azure.Plugins.Plugin.StandardConfig.EncryptKey(String key, String thumbprint)
+   at Microsoft.Azure.Plugins.Plugin.StandardConfig..ctor(String nameSpace, Int32 eventVersion, Int64 overallQuota, String accountName, String accountKey, String accountUri, String accountCertStore, Int32 retention, String thumbprint, EventVolumeClass eventVolume)
+   at Microsoft.Azure.Plugins.Plugin.WadParser.Translate(String baseMaResourcePath, Int32 actualDiskQuota, String& fullConfigFilePath)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+DiagnosticsPlugin.exe Error: 0 : [12/15/2016 6:18:57 PM] Failed to convert WAD1.1 config to Monagent config format
+DiagnosticsPlugin.exe Information: 0 : [12/15/2016 6:18:57 PM] DiagnosticPlugin.exe exit with code -108

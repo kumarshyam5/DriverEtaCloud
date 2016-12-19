@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26009.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "DriverETACloud.CloudService", "DriverETACloud.CloudService\DriverETACloud.CloudService.ccproj", "{4DC516D4-B23D-49D6-85F3-ECA3D3386789}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriverETACloud.Service", "DriverETACloud.Service\DriverETACloud.Service.csproj", "{97BE2677-25F9-43CE-8F0C-AA039C7DB47E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriverETACloud.Entities", "DriverETACloud.Entities\DriverETACloud.Entities.csproj", "{88138E96-2496-466C-9637-648CE7F9229B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriverETACloud.Web", "DriverETACloud.Web\DriverETACloud.Web.csproj", "{CF8C2283-9F48-4E33-B78F-52C6656391B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriverETACloud.Desktop", "DriverETACloud.Desktop\DriverETACloud.Desktop.csproj", "{2F095CAE-04E7-43D3-9FF4-2BA75BC55D5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DC516D4-B23D-49D6-85F3-ECA3D3386789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DC516D4-B23D-49D6-85F3-ECA3D3386789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DC516D4-B23D-49D6-85F3-ECA3D3386789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DC516D4-B23D-49D6-85F3-ECA3D3386789}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97BE2677-25F9-43CE-8F0C-AA039C7DB47E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97BE2677-25F9-43CE-8F0C-AA039C7DB47E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97BE2677-25F9-43CE-8F0C-AA039C7DB47E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97BE2677-25F9-43CE-8F0C-AA039C7DB47E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88138E96-2496-466C-9637-648CE7F9229B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88138E96-2496-466C-9637-648CE7F9229B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88138E96-2496-466C-9637-648CE7F9229B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88138E96-2496-466C-9637-648CE7F9229B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF8C2283-9F48-4E33-B78F-52C6656391B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF8C2283-9F48-4E33-B78F-52C6656391B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF8C2283-9F48-4E33-B78F-52C6656391B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF8C2283-9F48-4E33-B78F-52C6656391B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F095CAE-04E7-43D3-9FF4-2BA75BC55D5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F095CAE-04E7-43D3-9FF4-2BA75BC55D5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F095CAE-04E7-43D3-9FF4-2BA75BC55D5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F095CAE-04E7-43D3-9FF4-2BA75BC55D5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

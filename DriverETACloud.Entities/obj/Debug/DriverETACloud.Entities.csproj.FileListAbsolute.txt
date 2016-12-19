@@ -1,0 +1,10 @@
+C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.Entities\bin\Debug\DriverETACloud.Entities.dll.config
+C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.Entities\bin\Debug\DriverETACloud.Entities.dll
+C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.Entities\bin\Debug\DriverETACloud.Entities.pdb
+C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.Entities\bin\Debug\EntityFramework.dll
+C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.Entities\bin\Debug\EntityFramework.xml
+C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.Entities\obj\Debug\DriverETACloud.Entities.csprojResolveAssemblyReference.cache
+C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.Entities\obj\Debug\DriverETACloud.Entities.dll
+C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.Entities\obj\Debug\DriverETACloud.Entities.pdb

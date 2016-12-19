@@ -1,0 +1,17 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:48 PM] Emulator config file set to C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.CloudService\csx\Debug\roles\DriverETACloud.Service\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:48 PM] DiagnosticsStoreRootPath set to: C:\Users\u23298\AppData\Local\dftmp\Resources\ba2b5a2a-7e3f-48ef-b2b8-22d8308b8428
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:48 PM] Loading config file: C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.CloudService\csx\Debug\roles\DriverETACloud.Service\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:48 PM] Config file to read: C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.CloudService\csx\Debug\roles\DriverETACloud.Service\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:48 PM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:48 PM] Emulator config file set to C:\Users\u23298\Documents\Visual Studio 2017\Projects\DriverETACloud\DriverETACloud.CloudService\csx\Debug\roles\DriverETACloud.Service\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:48 PM] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:48 PM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:49 PM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:49 PM] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:49 PM] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:49 PM] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:49 PM] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:49 PM] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:49 PM] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Error: 0 : [12/15/2016 6:18:57 PM] DiagnosticsPlugin launch failed with exit code -108
+DiagnosticsPluginLauncher.exe Information: 0 : [12/15/2016 6:18:57 PM] DiagnosticPlugin exited with code -108

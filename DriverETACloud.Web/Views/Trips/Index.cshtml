@@ -1,0 +1,52 @@
+﻿@model IEnumerable<DriverETACloud.Entities.Models.Trip>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OriginLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DestinationLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TripType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TripStatus)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OriginLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DestinationLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TripType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TripStatus)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TripID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TripID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TripID })
+        </td>
+    </tr>
+}
+
+</table>
